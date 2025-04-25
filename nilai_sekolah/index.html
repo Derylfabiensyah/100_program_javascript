@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Program nilai sekolah</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Program Penghitung Nilai</h1>
+        <div class="input">
+            <label for="pkn">Nilai PKN:</label>
+            <input type="number" id="pkn" required>
+        </div>
+        <div class="input">
+            <label for="mtk">Nilai MTK:</label>
+            <input type="number" id="mtk" required>
+        </div>
+        <div class="input">
+            <label for="inggris">Nilai Inggris:</label>
+            <input type="number" id="inggris" required>
+        </div>
+        <button onclick="hitung()">Hitung</button>
+        
+        <div id="hasil" class="hasil">
+            <h3>Hasil</h3>
+            <p>Jumlah Nilai : <span id="jumlah_nilai"></span></p>
+            <p>Rata Rata : <span id="rata_rata"></span></p>
+            <p>predikat : <span id="predikat"></span></p>
+            <p>Status Kelulusan : <span id="s_kelulusan"></span></p>
+            <p>keterangan : <span id="keterangan"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
